@@ -2,7 +2,7 @@ import '../styles/Banner.css'
 import logo from '../assets/logo.png'
 import Recommendation from './Recommendation'
 
-function Banner() {
+/*function Banner() {
     const title = 'La maison jungle'
     return (
         <div className='lmj-banner'>
@@ -12,6 +12,10 @@ function Banner() {
             </div>
             <Recommendation />
         </div>)
+}*/
+
+function Banner({ children }) {
+    return <div className='lmj-banner'>{ children }</div>
 }
 
 export default Banner
